@@ -1,0 +1,33 @@
+// Rota para criar o cliente
+POST http://localhost:3000/clientes
+Content-Type: application/json
+
+{
+    "nome": "Cliente teste outro",
+    "lojasCompradas": "BK",
+    "itensComprados": "Hambúrguer",
+    "itensMaisComprados": "Hambúrguer"
+}
+
+###
+//Rota para listar clientes
+// ?search (após clientes) = pesquisa específica
+GET http://localhost:3000/clientes
+
+###
+// Rota para atualizar clientes
+// Substituir id pelo id do cliente desejado
+PUT http://localhost:3000/clientes/id
+Content-Type: application/json
+
+{
+    "nome": "Cliente teste 02",
+    "lojasCompradas": "MC",
+    "itensComprados": "Batatas",
+    "itensMaisComprados": "Batatas"
+}
+
+###
+// Rota para deletar clientes
+// Substituir id pelo id do cliente desejado
+DELETE http://localhost:3000/clientes/id
