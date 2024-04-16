@@ -1,33 +1,71 @@
-// Rota para criar o cliente
-POST http://localhost:3000/clientes
+// Rota para criar o pedido
+POST http://localhost:3000/pedidos
 Content-Type: application/json
 
 {
-    "nome": "Cliente teste outro",
-    "lojasCompradas": "BK",
-    "itensComprados": "Hambúrguer",
-    "itensMaisComprados": "Hambúrguer"
+    "codigo": "Pedido teste 01",
+    "produtos": [
+        {
+            "_id": "001",
+            "nome": "X-Burguer",
+            "preco": "15",
+            "quant": "1",
+            "imgProduto": "imgProd1"
+        },
+        {
+            "_id": "002",
+            "nome": "Refrigerante Coca Lata",
+            "preco": "5",
+            "quant": "1",
+            "imgProduto": "imgProd2"
+        }
+    ],
+    "categoriaEstab": "Lanches",
+    "idLoja": "1111",
+    "imgLoja": "ex1",
+    "nomLoja": "BK",
+    "valTot": "20",
+    "datCriacao": "2020-12-20"
 }
 
 ###
-//Rota para listar clientes
-// ?search (após clientes) = pesquisa específica
-GET http://localhost:3000/clientes
+//Rota para listar pedidos
+// ?search (após pedidos) = pesquisa específica
+GET http://localhost:3000/pedidos
 
 ###
-// Rota para atualizar clientes
-// Substituir id pelo id do cliente desejado
-PUT http://localhost:3000/clientes/id
+// Rota para atualizar pedidos
+// Substituir id pelo id do pedido desejado
+PUT http://localhost:3000/pedidos/id
 Content-Type: application/json
 
 {
-    "nome": "Cliente teste 02",
-    "lojasCompradas": "MC",
-    "itensComprados": "Batatas",
-    "itensMaisComprados": "Batatas"
+    "codigo": "Pedido teste 02",
+    "produtos": [
+        {
+            "_id": "003",
+            "nome": "Pizza de Mussarela Grande",
+            "preco": "70",
+            "quant": "1",
+            "imgProduto": "imgProd3"
+        },
+        {
+            "_id": "004",
+            "nome": "Refrigerante Guaraná Grande",
+            "preco": "10",
+            "quant": "1",
+            "imgProduto": "imgProd4"
+        }
+    ],
+    "categoriaEstab": "Pizzaria",
+    "idLoja": "2222",
+    "imgLoja": "ex2",
+    "nomloja": "Pizza Hut",
+    "valTot": "80",
+    "datCriacao": "2024-10-04"
 }
 
 ###
-// Rota para deletar clientes
-// Substituir id pelo id do cliente desejado
-DELETE http://localhost:3000/clientes/id
+// Rota para deletar pedidos
+// Substituir id pelo id do pedido desejado
+DELETE http://localhost:3000/pedidos/id
