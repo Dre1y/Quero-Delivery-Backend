@@ -1,0 +1,4 @@
+id,codigo,produtos,categoriaEstabelecimento,idLoja,imagemLoja,nomeLoja,valorTotal,dataCriacao
+1,XYZ123,"[{id: 1, nome: produto, preco: 10, quantidade: 10, imagemProduto: https://extra.globo.com/incoming/25650693-8d0-858/w976h550-PROP/tiringa1.jpg}]",Supermercado,123,https://extra.globo.com/incoming/25650693-8d0-858/w976h550-PROP/tiringa1.jpg,Supermercado A,100.00,2024-04-09
+2,ABC456,"[{id: 1, nome: produto, preco: 10, quantidade: 10, imagemProduto: https://extra.globo.com/incoming/25650693-8d0-858/w976h550-PROP/tiringa1.jpg}]",Lanches,456,https://extra.globo.com/incoming/25650693-8d0-858/w976h550-PROP/tiringa1.jpg,Lanchonete B,50.00,2024-04-09
+3,DEF789,"[{id: 1, nome: produto, preco: 10, quantidade: 10, imagemProduto: https://extra.globo.com/incoming/25650693-8d0-858/w976h550-PROP/tiringa1.jpg}]",Pizzaria,789,https://extra.globo.com/incoming/25650693-8d0-858/w976h550-PROP/tiringa1.jpg,Pizzaria C,80.00,2024-04-09
