@@ -5,7 +5,6 @@
 <p>Para rodar o código, digite os seguintes comandos no terminal:</p>
 <ul>
   <li><b>git init</b></li>
-  <li><b>git checkout main</b></li>
   <li><b>npm run dev</b></li>
 </ul>
 
